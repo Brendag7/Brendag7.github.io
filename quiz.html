@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Project: Part 4</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<div id="content">
+		<header>
+			<h1>Online Learning</h1>
+		</header>
+		<nav id="main-nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+				<li><a href="contact.html">Contact Me</a></li>
+			</ul>
+		</nav>
+		<main>
+		<div id="container">
+			<section>
+				<h2>Website Development Quiz</h2>
+				<p>
+					<label for="txt-Q1">What is the correct HTML element to show the largest heading?</label>
+					<select id="txt-Q1">
+						<option>heading</option>
+						<option>h6</option>
+						<option value="h1">h1</option>
+						<option>br</option>
+					</select>
+				</p>
+				<p>
+					<label for="txt-Q2">What is the correct HTML element to make a table?</label>
+					<select id="txt-Q2">
+						<option>t</option>
+						<option>tb</option>
+						<option value="table">table</option>
+						<option>tr</option>
+					</select>
+				</p>
+				<p>
+					<label for="txt-Q3">What HTML element is used to make an ordered list?</label>
+					<select id="txt-Q3">
+						<option>list</option>
+						<option value="ol">ol</option>
+						<option>order</option>
+						<option>ul</option>
+					</select>
+				</p>
+				<p>
+					<label for="txt-Q4">How would you insert a break in HTML?</label>
+					<select id="txt-Q4">
+						<option value="br">br</option>
+						<option>break</option>
+						<option>bk</option>
+						<option>brk</option>
+					</select>
+				</p>
+				<button onclick="submitQuiz()">Submit Quiz</button>
+			</section>
+			<section class="hidden" id="result">
+			<h2>Quiz Results</h2>
+				<p id="para-1"> </p>
+				<p id="para-2"> </p>
+				<p id="para-3"> </p>
+				<p id="para-4"> </p>
+				<h3 id="score"></h3>
+			</section>
+		</div>
+		</main>
+		<footer>
+			<p>&copy;My copywrite</p>
+		</footer>
+	</div>
+</body>
+</html>
